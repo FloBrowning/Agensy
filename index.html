@@ -9,14 +9,31 @@
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background-color: #f9f9f9;
+            background-color: #f4f4f4;
             color: #333;
         }
         header {
-            background-color: #002b5c;
+            background: url('https://images.unsplash.com/photo-1581090700227-1e8f2ddc3a48?fit=crop&w=1600&q=80') no-repeat center center;
+            background-size: cover;
             color: white;
-            padding: 40px 20px;
+            padding: 60px 20px 40px;
             text-align: center;
+            position: relative;
+        }
+        header::before {
+            content: "";
+            background: rgba(0, 43, 92, 0.7);
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+        }
+        header .content {
+            position: relative;
+            z-index: 1;
+        }
+        header img.logo {
+            max-height: 80px;
+            display: block;
+            margin: 0 auto 15px;
         }
         header h1 {
             margin: 0;
@@ -70,8 +87,11 @@
 <body>
 
 <header>
-    <h1>FLO Browning Agency</h1>
-    <p>Визы, ВНЖ, Трудоустройство — Европа, UK, США</p>
+    <div class="content">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Globe_icon.svg/1024px-Globe_icon.svg.png" class="logo" alt="FLO Browning Agency">
+        <h1>FLO Browning Agency</h1>
+        <p>Визы, ВНЖ, Трудоустройство — Европа, UK, США</p>
+    </div>
 </header>
 
 <section class="about">

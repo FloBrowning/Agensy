@@ -121,15 +121,17 @@
 
 <section class="contact">
     <h2>Контакты</h2>
-    <p>Email: info@flobrowning.com</p>
+    <p>Email: flobrowningagency@gmail.com</p>
     <p>Телефон: +1 234 567 890</p>
     <p>Адрес: Global Street 123, International City</p>
     <div class="contact-form">
         <h3>Связаться с нами</h3>
-        <input type="text" placeholder="Ваше имя">
-        <input type="email" placeholder="Ваш email">
-        <textarea rows="5" placeholder="Ваше сообщение"></textarea>
-        <button>Отправить</button>
+        <form action="https://formspree.io/f/xkndkrge" method="POST">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="email" name="email" placeholder="Ваш email" required>
+            <textarea name="message" rows="5" placeholder="Ваше сообщение" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
     </div>
 </section>
 

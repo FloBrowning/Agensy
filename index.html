@@ -4,10 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FLO Browning Agency</title>
-
-  <!-- AOS стили -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
   <style>
     body {
       margin: 0;
@@ -45,12 +42,22 @@
       font-size: 18px;
       margin-top: 10px;
     }
+    nav {
+      background:#001d3d;
+      text-align:center;
+      padding:15px;
+    }
+    nav a {
+      color:white;
+      margin:0 15px;
+      text-decoration:none;
+    }
     section {
       padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
     }
-    .services, .about, .contact, .benefits, .how-we-work, .testimonials, .countries, .packages, .faq {
+    .services, .about, .contact, .benefits {
       background: white;
       margin-bottom: 20px;
       border-radius: 8px;
@@ -60,7 +67,7 @@
     h2 {
       color: #002b5c;
     }
-    ul, ol {
+    ul {
       padding-left: 20px;
     }
     footer {
@@ -68,22 +75,6 @@
       background-color: #002b5c;
       color: white;
       padding: 20px;
-    }
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    .contact-form button {
-      background-color: #002b5c;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
     }
     .whatsapp-button {
       display: inline-flex;
@@ -106,52 +97,6 @@
     .whatsapp-button img {
       height: 28px;
     }
-    .whatsapp-fixed {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25D366;
-      padding: 10px;
-      border-radius: 50%;
-      z-index: 1000;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-    .whatsapp-fixed img {
-      height: 32px;
-    }
-    .flags div {
-      display: inline-block;
-      margin-right: 15px;
-      font-size: 16px;
-    }
-    .flags img {
-      height: 24px;
-      margin-right: 5px;
-      vertical-align: middle;
-    }
-    .package-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .package {
-      flex: 1;
-      min-width: 250px;
-      background-color: #f8f8f8;
-      padding: 20px;
-      border-radius: 8px;
-      text-align: center;
-    }
-    .testimonial {
-      margin-bottom: 20px;
-      padding-left: 10px;
-      border-left: 4px solid #002b5c;
-    }
-    details summary {
-      cursor: pointer;
-      font-weight: bold;
-      margin-top: 10px;
-    }
   </style>
 </head>
 
@@ -165,6 +110,13 @@
   </div>
 </header>
 
+<!-- Меню -->
+<nav>
+  <a href="index.html">Главная</a>
+  <a href="cases_with_lang_switch_ru.html">Наши кейсы</a>
+  <a href="cases_with_lang_switch_en.html" style="color:#00eaff;">Our Cases (EN)</a>
+</nav>
+
 <section class="about" data-aos="fade-up">
   <h2>О нас</h2>
   <p>FLO Browning Agency — ваш надежный партнёр в мире международных услуг. Мы предоставляем визовую поддержку, оформление ВНЖ, помощь в трудоустройстве и многое другое. Работаем официально и с душой!</p>
@@ -177,77 +129,20 @@
     <li>Визы в Великобританию и США</li>
     <li>Оформление ВНЖ</li>
     <li>Поиск работы в ЕС</li>
-    <li>Покупка недвижимости за рубежом</li>
   </ul>
 </section>
 
-<section class="how-we-work" data-aos="fade-up">
-  <h2>Как мы работаем</h2>
-  <ol>
-    <li><strong>Консультация:</strong> Бесплатная оценка вашей ситуации.</li>
-    <li><strong>Сбор документов:</strong> Помощь на каждом этапе.</li>
-    <li><strong>Подача:</strong> Мы готовим и подаём всё за вас.</li>
-    <li><strong>Результат:</strong> Вы получаете визу, ВНЖ или работу!</li>
-  </ol>
+<section class="benefits" data-aos="fade-up">
+  <h2>Почему мы?</h2>
+  <ul>
+    <li>Работаем легально и официально</li>
+    <li>Более 10 лет опыта</li>
+    <li>Профессиональная поддержка на всех этапах</li>
+    <li>Работаем с клиентами по всему миру</li>
+  </ul>
 </section>
 
-<section class="countries" data-aos="fade-up">
-  <h2>Страны, с которыми мы работаем</h2>
-  <div class="flags">
-    <div><img src="https://flagcdn.com/w40/eu.png"> Европа</div>
-    <div><img src="https://flagcdn.com/w40/gb.png"> Великобритания</div>
-    <div><img src="https://flagcdn.com/w40/us.png"> США</div>
-    <div><img src="https://flagcdn.com/w40/de.png"> Германия</div>
-    <div><img src="https://flagcdn.com/w40/pt.png"> Португалия</div>
-  </div>
-</section>
-
-<section class="packages" data-aos="fade-up">
-  <h2>Пакеты услуг</h2>
-  <div class="package-list">
-    <div class="package">
-      <h3>Старт</h3>
-      <p>Базовая помощь и консультации</p>
-      <p><strong>от 100€</strong></p>
-    </div>
-    <div class="package">
-      <h3>Премиум</h3>
-      <p>Полное сопровождение + переводы</p>
-      <p><strong>от 250€</strong></p>
-    </div>
-    <div class="package">
-      <h3>VIP</h3>
-      <p>Личный менеджер и приоритетное обслуживание</p>
-      <p><strong>от 500€</strong></p>
-    </div>
-  </div>
-</section>
-
-<section class="testimonials" data-aos="zoom-in">
-  <h2>Отзывы наших клиентов</h2>
-  <div class="testimonial">
-    <p>“Спасибо FLO! Помогли получить визу и подобрать круиз!”</p>
-    <strong>— Елена, Братислава</strong>
-  </div>
-  <div class="testimonial">
-    <p>“Благодарю за полное сопровождение по ВНЖ в Испании!”</p>
-    <strong>— Артур, Тбилиси</strong>
-  </div>
-</section>
-
-<section class="faq" data-aos="fade-up">
-  <h2>Вопросы и ответы</h2>
-  <details>
-    <summary>Сколько оформляется виза?</summary>
-    <p>Обычно 5–15 дней. Зависит от страны и консульства.</p>
-  </details>
-  <details>
-    <summary>Вы подаёте документы за клиента?</summary>
-    <p>Да, мы делаем всё возможное, чтобы клиенту было удобно.</p>
-  </details>
-</section>
-
-<section class="contact" data-aos="fade-up">
+<section class="contact" id="contacts" data-aos="fade-up">
   <h2>Контакты</h2>
   <p>Email: <a href="mailto:flobrowningagency@gmail.com">flobrowningagency@gmail.com</a></p>
   <p>WhatsApp: <a href="https://wa.me/447876602305" target="_blank">+44 7876 602305</a></p>
@@ -273,14 +168,12 @@
   </div>
 </footer>
 
-<a href="https://wa.me/447876602305" class="whatsapp-fixed" target="_blank" title="Связаться в WhatsApp">
-  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-</a>
-
-<!-- AOS JS -->
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
-  AOS.init({ duration: 1000, once: true });
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
 </script>
 
 </body>

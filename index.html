@@ -1,206 +1,211 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>FLO Browning Agency</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FLO Browning Agency</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" type="image/png">
 
-<!-- AOS стили -->
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- AOS стили -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-<style>
-body {
-margin: 0;
-font-family: 'Arial', sans-serif;
-background-color: #f4f4f4;
-color: #333;
-}
-
-header {
-background: url('https://images.unsplash.com/photo-1581090700227-1e8f2ddc3a48?fit=crop&w=1600&q=80') no-repeat center center;
-background-size: cover;
-color: white;
-padding: 60px 20px 40px;
-text-align: center;
-position: relative;
-}
-
-header::before {
-content: "";
-background: rgba(0, 43, 92, 0.7);
-position: absolute;
-top: 0; left: 0; right: 0; bottom: 0;
-}
-
-header .content {
-position: relative;
-z-index: 1;
-}
-
-header img.logo {
-max-height: 80px;
-margin: 0 auto 15px;
-}
-
-header h1 {
-margin: 0;
-font-size: 36px;
-}
-
-header p {
-font-size: 18px;
-margin-top: 10px;
-}
-
-section {
-padding: 40px 20px;
-max-width: 1000px;
-margin: auto;
-}
-
-.services, .about, .contact, .benefits {
-background: white;
-margin-bottom: 20px;
-border-radius: 8px;
-box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-padding: 30px;
-}
-
-h2 {
-color: #002b5c;
-}
-
-ul {
-padding-left: 20px;
-}
-
-footer {
-text-align: center;
-background-color: #002b5c;
-color: white;
-padding: 20px;
-}
-
-.contact-form input,
-.contact-form textarea {
-width: 100%;
-padding: 10px;
-margin-bottom: 10px;
-border-radius: 5px;
-border: 1px solid #ccc;
-}
-
-.contact-form button {
-background-color: #002b5c;
-color: white;
-border: none;
-padding: 10px 20px;
-border-radius: 5px;
-cursor: pointer;
-}
-
-.whatsapp-button {
-display: inline-flex;
-align-items: center;
-gap: 10px;
-margin-top: 15px;
-background-color: #25D366;
-color: white;
-padding: 12px 24px;
-border-radius: 8px;
-text-decoration: none;
-font-size: 18px;
-font-weight: bold;
-box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-transition: background-color 0.3s;
-}
-
-.whatsapp-button:hover {
-background-color: #1ebe5c;
-}
-
-.whatsapp-button img {
-height: 28px;
-}
-
-footer a img {
-height: 24px;
-vertical-align: middle;
-}
-</style>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1581090700227-1e8f2ddc3a48?fit=crop&w=1600&q=80') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 60px 20px 40px;
+      text-align: center;
+      position: relative;
+    }
+    header::before {
+      content: "";
+      background: rgba(0, 43, 92, 0.7);
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+    }
+    header .content {
+      position: relative;
+      z-index: 1;
+    }
+    header img.logo {
+      max-height: 80px;
+      margin: 0 auto 15px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    .lang-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #ffffff88;
+      color: #002b5c;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services, .about, .contact, .benefits {
+      background: white;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 30px;
+    }
+    h2 {
+      color: #002b5c;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      text-align: center;
+      background-color: #002b5c;
+      color: white;
+      padding: 20px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .contact-form button {
+      background-color: #002b5c;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .whatsapp-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 15px;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s;
+    }
+    .whatsapp-button:hover {
+      background-color: #1ebe5c;
+    }
+    .whatsapp-button img {
+      height: 28px;
+    }
+    footer a img {
+      height: 24px;
+      vertical-align: middle;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-<div class="content" data-aos="fade-down">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Globe_icon.svg/1024px-Globe_icon.svg.png" class="logo" alt="FLO Browning Agency">
-<h1>FLO Browning Agency</h1>
-<p>Визы, ВНЖ, Трудоустройство — Европа, UK, США</p>
-</div>
+  <div class="lang-toggle">EN / RU</div>
+  <div class="content" data-aos="fade-down">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Globe_icon.svg/1024px-Globe_icon.svg.png" class="logo" alt="FLO Browning Agency">
+    <h1>FLO Browning Agency</h1>
+    <p>Визы, ВНЖ, Трудоустройство — Европа, UK, США</p>
+  </div>
 </header>
 
 <section class="about" data-aos="fade-up">
-<h2>О нас</h2>
-<p>Мы — международное агентство с опытом работы в сфере миграционного сопровождения. Помогаем получить визы, ВНЖ, найти работу за границей.</p>
+  <h2>О нас</h2>
+  <p>
+    FLO Browning Agency — ваш надежный партнёр в мире международных услуг, который делает путь к мечте ярким и беззаботным!
+    Мы предоставляем комплексные решения по визам, трудоустройству, ВНЖ, недвижимости, юридическим вопросам, а также туристическим услугам.
+    С нами вы получите поддержку на каждом этапе, будь то путешествие, переезд или новая работа за границей.
+  </p>
 </section>
 
 <section class="services" data-aos="zoom-in">
-<h2>Наши услуги</h2>
-<ul>
-<li>Шенгенские визы</li>
-<li>Визы в Великобританию и США</li>
-<li>Оформление ВНЖ</li>
-<li>Поиск работы в ЕС</li>
-</ul>
+  <h2>Наши услуги</h2>
+  <ul>
+    <li>Оформление Шенгенских виз</li>
+    <li>Визы в Великобританию и США</li>
+    <li>Оформление ВНЖ и ПМЖ</li>
+    <li>Поиск и трудоустройство в странах ЕС</li>
+    <li>Юридическая поддержка и консультации</li>
+    <li>Подбор туров и бронирование авиабилетов</li>
+    <li>Покупка и аренда недвижимости за границей</li>
+  </ul>
 </section>
 
 <section class="benefits" data-aos="fade-up">
-<h2>Почему мы?</h2>
-<ul>
-<li>Работаем легально и официально</li>
-<li>Более 10 лет опыта</li>
-<li>Профессиональная поддержка на всех этапах</li>
-<li>Работаем с клиентами по всему миру</li>
-</ul>
+  <h2>Почему выбирают нас</h2>
+  <ul>
+    <li>10+ лет международного опыта</li>
+    <li>Индивидуальный подход к каждому клиенту</li>
+    <li>Легальная деятельность и надежность</li>
+    <li>Комплексное сопровождение “под ключ”</li>
+  </ul>
 </section>
 
 <section class="contact" id="contacts" data-aos="fade-up">
-<h2>Контакты</h2>
-<p>Email: <a href="mailto:flobrowningagency@gmail.com">flobrowningagency@gmail.com</a></p>
-<p>WhatsApp: <a href="https://wa.me/447876602305" target="_blank">+44 7876 602305</a></p>
-
-<a href="https://wa.me/447876602305" target="_blank" class="whatsapp-button">
-<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-Связаться в WhatsApp
-</a>
+  <h2>Контакты</h2>
+  <p>Email: <a href="mailto:flobrowningagency@gmail.com">flobrowningagency@gmail.com</a></p>
+  <p>WhatsApp: <a href="https://wa.me/447876602305" target="_blank">+44 7876 602305</a></p>
+  <a href="https://wa.me/447876602305" target="_blank" class="whatsapp-button">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    Связаться в WhatsApp
+  </a>
 </section>
 
 <footer>
-&copy; 2025 FLO Browning Agency. Все права защищены.
-<div style="margin-top: 15px;">
-<a href="https://t.me/FloBrowningAgency" target="_blank" style="margin-right: 15px;">
-<img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
-</a>
-<a href="https://www.facebook.com/share/1FXdS2Dp2o/?mibextid=wwXIfr" target="_blank" style="margin-right: 15px;">
-<img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
-</a>
-<a href="https://www.instagram.com/flo_browning_agency" target="_blank" style="margin-right: 15px;">
-<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
-</a>
-<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank">
-<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-</a>
-</div>
+  &copy; 2025 FLO Browning Agency. Все права защищены.
+  <div style="margin-top: 15px;">
+    <a href="https://t.me/FloBrowningAgency" target="_blank" style="margin-right: 15px;">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+    </a>
+    <a href="https://www.facebook.com/share/1FXdS2Dp2o/?mibextid=wwXIfr" target="_blank" style="margin-right: 15px;">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/flo_browning_agency" target="_blank" style="margin-right: 15px;">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+    </a>
+    <a href="https://wa.me/447876602305" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a>
+  </div>
 </footer>
 
 <!-- AOS JS -->
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
-AOS.init({
-duration: 1000,
-once: true
-});
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
 </script>
 
 </body>

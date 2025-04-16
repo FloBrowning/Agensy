@@ -42,27 +42,17 @@
       font-size: 18px;
       margin-top: 10px;
     }
-    nav {
-      background:#001d3d;
-      text-align:center;
-      padding:15px;
-    }
-    nav a {
-      color:white;
-      margin:0 15px;
-      text-decoration:none;
-    }
     section {
       padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
     }
-    .services, .about, .contact, .benefits {
+    .section-box {
       background: white;
-      margin-bottom: 20px;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
       padding: 30px;
+      margin-bottom: 20px;
     }
     h2 {
       color: #002b5c;
@@ -75,6 +65,11 @@
       background-color: #002b5c;
       color: white;
       padding: 20px;
+    }
+    footer a img {
+      height: 32px;
+      vertical-align: middle;
+      margin-right: 10px;
     }
     .whatsapp-button {
       display: inline-flex;
@@ -99,8 +94,13 @@
     }
   </style>
 </head>
-
 <body>
+
+<div style="position:absolute;top:20px;right:30px;">
+  <a href="index.html" style="color:#00eaff;text-decoration:underline;margin-right:15px;">RU</a>
+  <a href="index-en.html" style="color:#fff;text-decoration:none;">EN</a>
+</div>
+
 
 <header>
   <div class="content" data-aos="fade-down">
@@ -110,43 +110,45 @@
   </div>
 </header>
 
-<!-- Меню -->
-<nav>
-  <a href="index.html">Главная</a>
-  <a href="cases_with_lang_switch_ru.html">Наши кейсы</a>
-  <a href="cases_with_lang_switch_en.html" style="color:#00eaff;">Our Cases (EN)</a>
+<nav style="background:#001d3d; text-align:center; padding:15px;">
+  <a href="index.html" style="color:white; margin:0 15px; text-decoration:none;">Главная</a>
+  <a href="cases_with_lang_switch_ru.html" style="color:white; margin:0 15px; text-decoration:none;">Наши кейсы</a>
+  <a href="cases_with_lang_switch_en.html" style="color:#00eaff; margin:0 15px; text-decoration:none;">Our Cases (EN)</a>
 </nav>
 
-<section class="about" data-aos="fade-up">
+
+<section class="section-box" data-aos="fade-up">
   <h2>О нас</h2>
-  <p>FLO Browning Agency — ваш надежный партнёр в мире международных услуг. Мы предоставляем визовую поддержку, оформление ВНЖ, помощь в трудоустройстве и многое другое. Работаем официально и с душой!</p>
+  <p>FLO Browning Agency — ваш надежный партнёр в мире международных услуг, который сделает ваш путь к мечте ярким и беззаботным! Мы предоставляем комплексные решения по визам, трудоустройству, недвижимости, юридическим вопросам, а также полный спектр услуг для путешественников. С нами ваш мир становится проще и доступнее, а каждое ваше желание превращается в реальность!</p>
 </section>
 
-<section class="services" data-aos="zoom-in">
+<section class="section-box" data-aos="fade-up">
   <h2>Наши услуги</h2>
   <ul>
-    <li>Шенгенские визы</li>
-    <li>Визы в Великобританию и США</li>
-    <li>Оформление ВНЖ</li>
-    <li>Поиск работы в ЕС</li>
+    <li><strong>Оформление виз:</strong> Шенгенская виза, рабочие визы, студенческие, туристические — мы сделаем всё за вас!</li>
+    <li><strong>Подбор туров:</strong> Индивидуальные туры по всему миру. От пляжного отдыха до экскурсий.</li>
+    <li><strong>Авиабилеты и транспорт:</strong> Бронируем билеты по лучшим ценам.</li>
+    <li><strong>Трудоустройство:</strong> Работа в ЕС, Великобритании и США. Сопровождаем полностью.</li>
+    <li><strong>Оформление ВНЖ и ПМЖ:</strong> Переезд, адаптация, документы.</li>
+    <li><strong>Юридическая поддержка:</strong> Визы, контракты, налоги и другие вопросы.</li>
+    <li><strong>Недвижимость:</strong> Поиск, покупка, аренда — с полной юридической защитой.</li>
   </ul>
 </section>
 
-<section class="benefits" data-aos="fade-up">
-  <h2>Почему мы?</h2>
+<section class="section-box" data-aos="fade-up">
+  <h2>Почему выбирают нас?</h2>
   <ul>
-    <li>Работаем легально и официально</li>
-    <li>Более 10 лет опыта</li>
-    <li>Профессиональная поддержка на всех этапах</li>
-    <li>Работаем с клиентами по всему миру</li>
+    <li>Индивидуальный подход</li>
+    <li>Профессионализм</li>
+    <li>Надежность и безопасность</li>
+    <li>Гибкость в решениях</li>
   </ul>
 </section>
 
-<section class="contact" id="contacts" data-aos="fade-up">
+<section class="section-box" id="contacts" data-aos="fade-up">
   <h2>Контакты</h2>
   <p>Email: <a href="mailto:flobrowningagency@gmail.com">flobrowningagency@gmail.com</a></p>
   <p>WhatsApp: <a href="https://wa.me/447876602305" target="_blank">+44 7876 602305</a></p>
-
   <a href="https://wa.me/447876602305" target="_blank" class="whatsapp-button">
     <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
     Связаться в WhatsApp
@@ -156,24 +158,24 @@
 <footer>
   &copy; 2025 FLO Browning Agency. Все права защищены.
   <div style="margin-top: 15px;">
-    <a href="https://t.me/FloBrowningAgency" target="_blank" style="margin-right: 15px;">
+    <a href="https://t.me/FloBrowningAgency" target="_blank">
       <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
     </a>
-    <a href="https://www.facebook.com/share/1FXdS2Dp2o/?mibextid=wwXIfr" target="_blank" style="margin-right: 15px;">
+    <a href="https://www.facebook.com/share/1FXdS2Dp2o/?mibextid=wwXIfr" target="_blank">
       <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
     </a>
-    <a href="https://www.instagram.com/flo_browning_agency" target="_blank" style="margin-right: 15px;">
+    <a href="https://www.instagram.com/flo_browning_agency" target="_blank">
       <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+    </a>
+    <a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
     </a>
   </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
-  AOS.init({
-    duration: 1000,
-    once: true
-  });
+AOS.init({ duration: 1000, once: true });
 </script>
 
 </body>

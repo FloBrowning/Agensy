@@ -1,0 +1,3371 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кейсы — FLO Browning Agency</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #0f2027;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #0077b6;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 36px;
+      color: #fff;
+    }
+    section {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      text-align: center;
+      color: #00eaff;
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+    .filter {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .filter select {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+      background: #0077b6;
+      color: white;
+    }
+    .case {
+      background: rgba(255,255,255,0.05);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(255,255,255,0.1);
+      transition: all 0.3s ease;
+    }
+    .case h3 {
+      margin: 0 0 10px;
+      color: #00ffff;
+    }
+    .case p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+<div style="position:absolute;top:20px;right:30px;">
+  <a href="cases_with_modals_whatsapp.html" style="color:#fff;text-decoration:none;margin-right:15px;">RU</a>
+  <a href="cases_with_modals_whatsapp_en.html" style="color:#00eaff;text-decoration:underline;">EN</a>
+</div>
+
+
+
+<header>
+  <h1>Our Cases</h1>
+</header>
+
+<section>
+  <h2>Client Success Stories</h2>
+
+  <div class="filter">
+    <label for="countryFilter">Filter by country:</label>
+    <select id="countryFilter" onchange="filterCases()">
+      <option value="Все">All</option>
+      <option value="Литва">Lithuania</option>
+      <option value="Словакия">Slovakia</option>
+      <option value="Польша">Poland</option>
+      <option value="Португалия">Portugal</option>
+      <option value="Испания">Spain</option>
+      <option value="Италия">Italy</option>
+      <option value="Франция">France</option>
+      <option value="Германия">Germany</option>
+      <option value="Чехия">Czech Republic</option>
+      <option value="Нидерланды">Netherlands</option>
+      <option value="Венгрия">Hungary</option>
+      <option value="США">USA</option>
+      <option value="Великобритания">UK</option>
+    </select>
+  </div>
+
+  <div id="casesContainer">
+
+  <h1>Наши кейсы</h1>
+</header>
+
+<section>
+  <h2>Истории успеха клиентов</h2>
+
+  <div class="filter">
+    <label for="countryFilter">Фильтровать по стране:</label>
+    <select id="countryFilter" onchange="filterCases()">
+      <option value="Все">Все</option>
+      <option value="Литва">Литва</option>
+      <option value="Словакия">Словакия</option>
+      <option value="Польша">Польша</option>
+      <option value="Португалия">Португалия</option>
+      <option value="Испания">Испания</option>
+      <option value="Италия">Италия</option>
+      <option value="Франция">Франция</option>
+      <option value="Германия">Германия</option>
+      <option value="Чехия">Чехия</option>
+      <option value="Нидерланды">Нидерланды</option>
+    </select>
+  </div>
+
+  <div id="casesContainer">
+
+    <div class="case" data-country="Литва">
+      <h3><img src="https://flagcdn.com/w40/lt.png" alt="Литва"> Литва — Внж</h3>
+      <p><strong>Клиент:</strong> Андрей</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal1')">Learn more</button></div>
+    
+    <div class="case" data-country="Словакия">
+      <h3><img src="https://flagcdn.com/w40/sk.png" alt="Словакия"> Словакия — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Мария</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal2')">Learn more</button></div>
+    
+    <div class="case" data-country="Польша">
+      <h3><img src="https://flagcdn.com/w40/pl.png" alt="Польша"> Польша — Релокация</h3>
+      <p><strong>Клиент:</strong> Иван</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal3')">Learn more</button></div>
+    
+    <div class="case" data-country="Португалия">
+      <h3><img src="https://flagcdn.com/w40/pt.png" alt="Португалия"> Португалия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Наталья</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal4')">Learn more</button></div>
+    
+    <div class="case" data-country="Испания">
+      <h3><img src="https://flagcdn.com/w40/es.png" alt="Испания"> Испания — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Олег</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal5')">Learn more</button></div>
+    
+    <div class="case" data-country="Италия">
+      <h3><img src="https://flagcdn.com/w40/it.png" alt="Италия"> Италия — Внж</h3>
+      <p><strong>Клиент:</strong> Елена</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal6')">Learn more</button></div>
+    
+    <div class="case" data-country="Франция">
+      <h3><img src="https://flagcdn.com/w40/fr.png" alt="Франция"> Франция — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Дмитрий</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal7')">Learn more</button></div>
+    
+    <div class="case" data-country="Германия">
+      <h3><img src="https://flagcdn.com/w40/de.png" alt="Германия"> Германия — Релокация</h3>
+      <p><strong>Клиент:</strong> Оксана</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal8')">Learn more</button></div>
+    
+    <div class="case" data-country="Чехия">
+      <h3><img src="https://flagcdn.com/w40/cz.png" alt="Чехия"> Чехия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Роман</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal9')">Learn more</button></div>
+    
+    <div class="case" data-country="Нидерланды">
+      <h3><img src="https://flagcdn.com/w40/nl.png" alt="Нидерланды"> Нидерланды — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Татьяна</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal10')">Learn more</button></div>
+    
+    <div class="case" data-country="Литва">
+      <h3><img src="https://flagcdn.com/w40/lt.png" alt="Литва"> Литва — Внж</h3>
+      <p><strong>Клиент:</strong> Андрей</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal11')">Learn more</button></div>
+    
+    <div class="case" data-country="Словакия">
+      <h3><img src="https://flagcdn.com/w40/sk.png" alt="Словакия"> Словакия — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Мария</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal12')">Learn more</button></div>
+    
+    <div class="case" data-country="Польша">
+      <h3><img src="https://flagcdn.com/w40/pl.png" alt="Польша"> Польша — Релокация</h3>
+      <p><strong>Клиент:</strong> Иван</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal13')">Learn more</button></div>
+    
+    <div class="case" data-country="Португалия">
+      <h3><img src="https://flagcdn.com/w40/pt.png" alt="Португалия"> Португалия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Наталья</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal14')">Learn more</button></div>
+    
+    <div class="case" data-country="Испания">
+      <h3><img src="https://flagcdn.com/w40/es.png" alt="Испания"> Испания — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Олег</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal15')">Learn more</button></div>
+    
+    <div class="case" data-country="Италия">
+      <h3><img src="https://flagcdn.com/w40/it.png" alt="Италия"> Италия — Внж</h3>
+      <p><strong>Клиент:</strong> Елена</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal16')">Learn more</button></div>
+    
+    <div class="case" data-country="Франция">
+      <h3><img src="https://flagcdn.com/w40/fr.png" alt="Франция"> Франция — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Дмитрий</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal17')">Learn more</button></div>
+    
+    <div class="case" data-country="Германия">
+      <h3><img src="https://flagcdn.com/w40/de.png" alt="Германия"> Германия — Релокация</h3>
+      <p><strong>Клиент:</strong> Оксана</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal18')">Learn more</button></div>
+    
+    <div class="case" data-country="Чехия">
+      <h3><img src="https://flagcdn.com/w40/cz.png" alt="Чехия"> Чехия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Роман</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal19')">Learn more</button></div>
+    
+    <div class="case" data-country="Нидерланды">
+      <h3><img src="https://flagcdn.com/w40/nl.png" alt="Нидерланды"> Нидерланды — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Татьяна</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal20')">Learn more</button></div>
+    
+    <div class="case" data-country="Литва">
+      <h3><img src="https://flagcdn.com/w40/lt.png" alt="Литва"> Литва — Внж</h3>
+      <p><strong>Клиент:</strong> Андрей</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal21')">Learn more</button></div>
+    
+    <div class="case" data-country="Словакия">
+      <h3><img src="https://flagcdn.com/w40/sk.png" alt="Словакия"> Словакия — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Мария</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal22')">Learn more</button></div>
+    
+    <div class="case" data-country="Польша">
+      <h3><img src="https://flagcdn.com/w40/pl.png" alt="Польша"> Польша — Релокация</h3>
+      <p><strong>Клиент:</strong> Иван</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal23')">Learn more</button></div>
+    
+    <div class="case" data-country="Португалия">
+      <h3><img src="https://flagcdn.com/w40/pt.png" alt="Португалия"> Португалия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Наталья</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal24')">Learn more</button></div>
+    
+    <div class="case" data-country="Испания">
+      <h3><img src="https://flagcdn.com/w40/es.png" alt="Испания"> Испания — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Олег</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal25')">Learn more</button></div>
+    
+    <div class="case" data-country="Италия">
+      <h3><img src="https://flagcdn.com/w40/it.png" alt="Италия"> Италия — Внж</h3>
+      <p><strong>Клиент:</strong> Елена</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal26')">Learn more</button></div>
+    
+    <div class="case" data-country="Франция">
+      <h3><img src="https://flagcdn.com/w40/fr.png" alt="Франция"> Франция — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Дмитрий</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal27')">Learn more</button></div>
+    
+    <div class="case" data-country="Германия">
+      <h3><img src="https://flagcdn.com/w40/de.png" alt="Германия"> Германия — Релокация</h3>
+      <p><strong>Клиент:</strong> Оксана</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal28')">Learn more</button></div>
+    
+    <div class="case" data-country="Чехия">
+      <h3><img src="https://flagcdn.com/w40/cz.png" alt="Чехия"> Чехия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Роман</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal29')">Learn more</button></div>
+    
+    <div class="case" data-country="Нидерланды">
+      <h3><img src="https://flagcdn.com/w40/nl.png" alt="Нидерланды"> Нидерланды — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Татьяна</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal30')">Learn more</button></div>
+    
+    <div class="case" data-country="Литва">
+      <h3><img src="https://flagcdn.com/w40/lt.png" alt="Литва"> Литва — Внж</h3>
+      <p><strong>Клиент:</strong> Андрей</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal31')">Learn more</button></div>
+    
+    <div class="case" data-country="Словакия">
+      <h3><img src="https://flagcdn.com/w40/sk.png" alt="Словакия"> Словакия — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Мария</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal32')">Learn more</button></div>
+    
+    <div class="case" data-country="Польша">
+      <h3><img src="https://flagcdn.com/w40/pl.png" alt="Польша"> Польша — Релокация</h3>
+      <p><strong>Клиент:</strong> Иван</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal33')">Learn more</button></div>
+    
+    <div class="case" data-country="Португалия">
+      <h3><img src="https://flagcdn.com/w40/pt.png" alt="Португалия"> Португалия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Наталья</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal34')">Learn more</button></div>
+    
+    <div class="case" data-country="Испания">
+      <h3><img src="https://flagcdn.com/w40/es.png" alt="Испания"> Испания — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Олег</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal35')">Learn more</button></div>
+    
+    <div class="case" data-country="Италия">
+      <h3><img src="https://flagcdn.com/w40/it.png" alt="Италия"> Италия — Внж</h3>
+      <p><strong>Клиент:</strong> Елена</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal36')">Learn more</button></div>
+    
+    <div class="case" data-country="Франция">
+      <h3><img src="https://flagcdn.com/w40/fr.png" alt="Франция"> Франция — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Дмитрий</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal37')">Learn more</button></div>
+    
+    <div class="case" data-country="Германия">
+      <h3><img src="https://flagcdn.com/w40/de.png" alt="Германия"> Германия — Релокация</h3>
+      <p><strong>Клиент:</strong> Оксана</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal38')">Learn more</button></div>
+    
+    <div class="case" data-country="Чехия">
+      <h3><img src="https://flagcdn.com/w40/cz.png" alt="Чехия"> Чехия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Роман</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal39')">Learn more</button></div>
+    
+    <div class="case" data-country="Нидерланды">
+      <h3><img src="https://flagcdn.com/w40/nl.png" alt="Нидерланды"> Нидерланды — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Татьяна</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal40')">Learn more</button></div>
+    
+    <div class="case" data-country="Литва">
+      <h3><img src="https://flagcdn.com/w40/lt.png" alt="Литва"> Литва — Внж</h3>
+      <p><strong>Клиент:</strong> Андрей</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal41')">Learn more</button></div>
+    
+    <div class="case" data-country="Словакия">
+      <h3><img src="https://flagcdn.com/w40/sk.png" alt="Словакия"> Словакия — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Мария</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal42')">Learn more</button></div>
+    
+    <div class="case" data-country="Польша">
+      <h3><img src="https://flagcdn.com/w40/pl.png" alt="Польша"> Польша — Релокация</h3>
+      <p><strong>Клиент:</strong> Иван</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal43')">Learn more</button></div>
+    
+    <div class="case" data-country="Португалия">
+      <h3><img src="https://flagcdn.com/w40/pt.png" alt="Португалия"> Португалия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Наталья</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal44')">Learn more</button></div>
+    
+    <div class="case" data-country="Испания">
+      <h3><img src="https://flagcdn.com/w40/es.png" alt="Испания"> Испания — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Олег</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal45')">Learn more</button></div>
+    
+    <div class="case" data-country="Италия">
+      <h3><img src="https://flagcdn.com/w40/it.png" alt="Италия"> Италия — Внж</h3>
+      <p><strong>Клиент:</strong> Елена</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal46')">Learn more</button></div>
+    
+    <div class="case" data-country="Франция">
+      <h3><img src="https://flagcdn.com/w40/fr.png" alt="Франция"> Франция — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Дмитрий</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal47')">Learn more</button></div>
+    
+    <div class="case" data-country="Германия">
+      <h3><img src="https://flagcdn.com/w40/de.png" alt="Германия"> Германия — Релокация</h3>
+      <p><strong>Клиент:</strong> Оксана</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal48')">Learn more</button></div>
+    
+    <div class="case" data-country="Чехия">
+      <h3><img src="https://flagcdn.com/w40/cz.png" alt="Чехия"> Чехия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Роман</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal49')">Learn more</button></div>
+    
+    <div class="case" data-country="Нидерланды">
+      <h3><img src="https://flagcdn.com/w40/nl.png" alt="Нидерланды"> Нидерланды — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Татьяна</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal50')">Learn more</button></div>
+    
+    <div class="case" data-country="Литва">
+      <h3><img src="https://flagcdn.com/w40/lt.png" alt="Литва"> Литва — Внж</h3>
+      <p><strong>Клиент:</strong> Андрей</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal51')">Learn more</button></div>
+    
+    <div class="case" data-country="Словакия">
+      <h3><img src="https://flagcdn.com/w40/sk.png" alt="Словакия"> Словакия — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Мария</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal52')">Learn more</button></div>
+    
+    <div class="case" data-country="Польша">
+      <h3><img src="https://flagcdn.com/w40/pl.png" alt="Польша"> Польша — Релокация</h3>
+      <p><strong>Клиент:</strong> Иван</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal53')">Learn more</button></div>
+    
+    <div class="case" data-country="Португалия">
+      <h3><img src="https://flagcdn.com/w40/pt.png" alt="Португалия"> Португалия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Наталья</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal54')">Learn more</button></div>
+    
+    <div class="case" data-country="Испания">
+      <h3><img src="https://flagcdn.com/w40/es.png" alt="Испания"> Испания — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Олег</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal55')">Learn more</button></div>
+    
+    <div class="case" data-country="Италия">
+      <h3><img src="https://flagcdn.com/w40/it.png" alt="Италия"> Италия — Внж</h3>
+      <p><strong>Клиент:</strong> Елена</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal56')">Learn more</button></div>
+    
+    <div class="case" data-country="Франция">
+      <h3><img src="https://flagcdn.com/w40/fr.png" alt="Франция"> Франция — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Дмитрий</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal57')">Learn more</button></div>
+    
+    <div class="case" data-country="Германия">
+      <h3><img src="https://flagcdn.com/w40/de.png" alt="Германия"> Германия — Релокация</h3>
+      <p><strong>Клиент:</strong> Оксана</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal58')">Learn more</button></div>
+    
+    <div class="case" data-country="Чехия">
+      <h3><img src="https://flagcdn.com/w40/cz.png" alt="Чехия"> Чехия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Роман</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal59')">Learn more</button></div>
+    
+    <div class="case" data-country="Нидерланды">
+      <h3><img src="https://flagcdn.com/w40/nl.png" alt="Нидерланды"> Нидерланды — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Татьяна</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal60')">Learn more</button></div>
+    
+    <div class="case" data-country="Литва">
+      <h3><img src="https://flagcdn.com/w40/lt.png" alt="Литва"> Литва — Внж</h3>
+      <p><strong>Клиент:</strong> Андрей</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal61')">Learn more</button></div>
+    
+    <div class="case" data-country="Словакия">
+      <h3><img src="https://flagcdn.com/w40/sk.png" alt="Словакия"> Словакия — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Мария</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal62')">Learn more</button></div>
+    
+    <div class="case" data-country="Польша">
+      <h3><img src="https://flagcdn.com/w40/pl.png" alt="Польша"> Польша — Релокация</h3>
+      <p><strong>Клиент:</strong> Иван</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal63')">Learn more</button></div>
+    
+    <div class="case" data-country="Португалия">
+      <h3><img src="https://flagcdn.com/w40/pt.png" alt="Португалия"> Португалия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Наталья</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal64')">Learn more</button></div>
+    
+    <div class="case" data-country="Испания">
+      <h3><img src="https://flagcdn.com/w40/es.png" alt="Испания"> Испания — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Олег</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal65')">Learn more</button></div>
+    
+    <div class="case" data-country="Италия">
+      <h3><img src="https://flagcdn.com/w40/it.png" alt="Италия"> Италия — Внж</h3>
+      <p><strong>Клиент:</strong> Елена</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal66')">Learn more</button></div>
+    
+    <div class="case" data-country="Франция">
+      <h3><img src="https://flagcdn.com/w40/fr.png" alt="Франция"> Франция — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Дмитрий</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal67')">Learn more</button></div>
+    
+    <div class="case" data-country="Германия">
+      <h3><img src="https://flagcdn.com/w40/de.png" alt="Германия"> Германия — Релокация</h3>
+      <p><strong>Клиент:</strong> Оксана</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal68')">Learn more</button></div>
+    
+    <div class="case" data-country="Чехия">
+      <h3><img src="https://flagcdn.com/w40/cz.png" alt="Чехия"> Чехия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Роман</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal69')">Learn more</button></div>
+    
+    <div class="case" data-country="Нидерланды">
+      <h3><img src="https://flagcdn.com/w40/nl.png" alt="Нидерланды"> Нидерланды — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Татьяна</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal70')">Learn more</button></div>
+    
+    <div class="case" data-country="Литва">
+      <h3><img src="https://flagcdn.com/w40/lt.png" alt="Литва"> Литва — Внж</h3>
+      <p><strong>Клиент:</strong> Андрей</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal71')">Learn more</button></div>
+    
+    <div class="case" data-country="Словакия">
+      <h3><img src="https://flagcdn.com/w40/sk.png" alt="Словакия"> Словакия — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Мария</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal72')">Learn more</button></div>
+    
+    <div class="case" data-country="Польша">
+      <h3><img src="https://flagcdn.com/w40/pl.png" alt="Польша"> Польша — Релокация</h3>
+      <p><strong>Клиент:</strong> Иван</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal73')">Learn more</button></div>
+    
+    <div class="case" data-country="Португалия">
+      <h3><img src="https://flagcdn.com/w40/pt.png" alt="Португалия"> Португалия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Наталья</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal74')">Learn more</button></div>
+    
+    <div class="case" data-country="Испания">
+      <h3><img src="https://flagcdn.com/w40/es.png" alt="Испания"> Испания — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Олег</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal75')">Learn more</button></div>
+    
+    <div class="case" data-country="Италия">
+      <h3><img src="https://flagcdn.com/w40/it.png" alt="Италия"> Италия — Внж</h3>
+      <p><strong>Клиент:</strong> Елена</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal76')">Learn more</button></div>
+    
+    <div class="case" data-country="Франция">
+      <h3><img src="https://flagcdn.com/w40/fr.png" alt="Франция"> Франция — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Дмитрий</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal77')">Learn more</button></div>
+    
+    <div class="case" data-country="Германия">
+      <h3><img src="https://flagcdn.com/w40/de.png" alt="Германия"> Германия — Релокация</h3>
+      <p><strong>Клиент:</strong> Оксана</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal78')">Learn more</button></div>
+    
+    <div class="case" data-country="Чехия">
+      <h3><img src="https://flagcdn.com/w40/cz.png" alt="Чехия"> Чехия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Роман</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal79')">Learn more</button></div>
+    
+    <div class="case" data-country="Нидерланды">
+      <h3><img src="https://flagcdn.com/w40/nl.png" alt="Нидерланды"> Нидерланды — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Татьяна</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal80')">Learn more</button></div>
+    
+    <div class="case" data-country="Литва">
+      <h3><img src="https://flagcdn.com/w40/lt.png" alt="Литва"> Литва — Внж</h3>
+      <p><strong>Клиент:</strong> Андрей</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal81')">Learn more</button></div>
+    
+    <div class="case" data-country="Словакия">
+      <h3><img src="https://flagcdn.com/w40/sk.png" alt="Словакия"> Словакия — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Мария</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal82')">Learn more</button></div>
+    
+    <div class="case" data-country="Польша">
+      <h3><img src="https://flagcdn.com/w40/pl.png" alt="Польша"> Польша — Релокация</h3>
+      <p><strong>Клиент:</strong> Иван</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal83')">Learn more</button></div>
+    
+    <div class="case" data-country="Португалия">
+      <h3><img src="https://flagcdn.com/w40/pt.png" alt="Португалия"> Португалия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Наталья</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal84')">Learn more</button></div>
+    
+    <div class="case" data-country="Испания">
+      <h3><img src="https://flagcdn.com/w40/es.png" alt="Испания"> Испания — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Олег</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal85')">Learn more</button></div>
+    
+    <div class="case" data-country="Италия">
+      <h3><img src="https://flagcdn.com/w40/it.png" alt="Италия"> Италия — Внж</h3>
+      <p><strong>Клиент:</strong> Елена</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal86')">Learn more</button></div>
+    
+    <div class="case" data-country="Франция">
+      <h3><img src="https://flagcdn.com/w40/fr.png" alt="Франция"> Франция — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Дмитрий</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal87')">Learn more</button></div>
+    
+    <div class="case" data-country="Германия">
+      <h3><img src="https://flagcdn.com/w40/de.png" alt="Германия"> Германия — Релокация</h3>
+      <p><strong>Клиент:</strong> Оксана</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal88')">Learn more</button></div>
+    
+    <div class="case" data-country="Чехия">
+      <h3><img src="https://flagcdn.com/w40/cz.png" alt="Чехия"> Чехия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Роман</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal89')">Learn more</button></div>
+    
+    <div class="case" data-country="Нидерланды">
+      <h3><img src="https://flagcdn.com/w40/nl.png" alt="Нидерланды"> Нидерланды — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Татьяна</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal90')">Learn more</button></div>
+    
+    <div class="case" data-country="Литва">
+      <h3><img src="https://flagcdn.com/w40/lt.png" alt="Литва"> Литва — Внж</h3>
+      <p><strong>Клиент:</strong> Андрей</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal91')">Learn more</button></div>
+    
+    <div class="case" data-country="Словакия">
+      <h3><img src="https://flagcdn.com/w40/sk.png" alt="Словакия"> Словакия — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Мария</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal92')">Learn more</button></div>
+    
+    <div class="case" data-country="Польша">
+      <h3><img src="https://flagcdn.com/w40/pl.png" alt="Польша"> Польша — Релокация</h3>
+      <p><strong>Клиент:</strong> Иван</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal93')">Learn more</button></div>
+    
+    <div class="case" data-country="Португалия">
+      <h3><img src="https://flagcdn.com/w40/pt.png" alt="Португалия"> Португалия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Наталья</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal94')">Learn more</button></div>
+    
+    <div class="case" data-country="Испания">
+      <h3><img src="https://flagcdn.com/w40/es.png" alt="Испания"> Испания — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Олег</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal95')">Learn more</button></div>
+    
+    <div class="case" data-country="Италия">
+      <h3><img src="https://flagcdn.com/w40/it.png" alt="Италия"> Италия — Внж</h3>
+      <p><strong>Клиент:</strong> Елена</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal96')">Learn more</button></div>
+    
+    <div class="case" data-country="Франция">
+      <h3><img src="https://flagcdn.com/w40/fr.png" alt="Франция"> Франция — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Дмитрий</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal97')">Learn more</button></div>
+    
+    <div class="case" data-country="Германия">
+      <h3><img src="https://flagcdn.com/w40/de.png" alt="Германия"> Германия — Релокация</h3>
+      <p><strong>Клиент:</strong> Оксана</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal98')">Learn more</button></div>
+    
+    <div class="case" data-country="Чехия">
+      <h3><img src="https://flagcdn.com/w40/cz.png" alt="Чехия"> Чехия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Роман</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal99')">Learn more</button></div>
+    
+    <div class="case" data-country="Нидерланды">
+      <h3><img src="https://flagcdn.com/w40/nl.png" alt="Нидерланды"> Нидерланды — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Татьяна</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal100')">Learn more</button></div>
+    
+    <div class="case" data-country="Литва">
+      <h3><img src="https://flagcdn.com/w40/lt.png" alt="Литва"> Литва — Внж</h3>
+      <p><strong>Клиент:</strong> Андрей</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal101')">Learn more</button></div>
+    
+    <div class="case" data-country="Словакия">
+      <h3><img src="https://flagcdn.com/w40/sk.png" alt="Словакия"> Словакия — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Мария</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal102')">Learn more</button></div>
+    
+    <div class="case" data-country="Польша">
+      <h3><img src="https://flagcdn.com/w40/pl.png" alt="Польша"> Польша — Релокация</h3>
+      <p><strong>Клиент:</strong> Иван</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal103')">Learn more</button></div>
+    
+    <div class="case" data-country="Португалия">
+      <h3><img src="https://flagcdn.com/w40/pt.png" alt="Португалия"> Португалия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Наталья</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal104')">Learn more</button></div>
+    
+    <div class="case" data-country="Испания">
+      <h3><img src="https://flagcdn.com/w40/es.png" alt="Испания"> Испания — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Олег</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal105')">Learn more</button></div>
+    
+    <div class="case" data-country="Италия">
+      <h3><img src="https://flagcdn.com/w40/it.png" alt="Италия"> Италия — Внж</h3>
+      <p><strong>Клиент:</strong> Елена</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal106')">Learn more</button></div>
+    
+    <div class="case" data-country="Франция">
+      <h3><img src="https://flagcdn.com/w40/fr.png" alt="Франция"> Франция — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Дмитрий</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal107')">Learn more</button></div>
+    
+    <div class="case" data-country="Германия">
+      <h3><img src="https://flagcdn.com/w40/de.png" alt="Германия"> Германия — Релокация</h3>
+      <p><strong>Клиент:</strong> Оксана</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal108')">Learn more</button></div>
+    
+    <div class="case" data-country="Чехия">
+      <h3><img src="https://flagcdn.com/w40/cz.png" alt="Чехия"> Чехия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Роман</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal109')">Learn more</button></div>
+    
+    <div class="case" data-country="Нидерланды">
+      <h3><img src="https://flagcdn.com/w40/nl.png" alt="Нидерланды"> Нидерланды — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Татьяна</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal110')">Learn more</button></div>
+    
+    <div class="case" data-country="Литва">
+      <h3><img src="https://flagcdn.com/w40/lt.png" alt="Литва"> Литва — Внж</h3>
+      <p><strong>Клиент:</strong> Андрей</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal111')">Learn more</button></div>
+    
+    <div class="case" data-country="Словакия">
+      <h3><img src="https://flagcdn.com/w40/sk.png" alt="Словакия"> Словакия — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Мария</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal112')">Learn more</button></div>
+    
+    <div class="case" data-country="Польша">
+      <h3><img src="https://flagcdn.com/w40/pl.png" alt="Польша"> Польша — Релокация</h3>
+      <p><strong>Клиент:</strong> Иван</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal113')">Learn more</button></div>
+    
+    <div class="case" data-country="Португалия">
+      <h3><img src="https://flagcdn.com/w40/pt.png" alt="Португалия"> Португалия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Наталья</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal114')">Learn more</button></div>
+    
+    <div class="case" data-country="Испания">
+      <h3><img src="https://flagcdn.com/w40/es.png" alt="Испания"> Испания — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Олег</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal115')">Learn more</button></div>
+    
+    <div class="case" data-country="Италия">
+      <h3><img src="https://flagcdn.com/w40/it.png" alt="Италия"> Италия — Внж</h3>
+      <p><strong>Клиент:</strong> Елена</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal116')">Learn more</button></div>
+    
+    <div class="case" data-country="Франция">
+      <h3><img src="https://flagcdn.com/w40/fr.png" alt="Франция"> Франция — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Дмитрий</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal117')">Learn more</button></div>
+    
+    <div class="case" data-country="Германия">
+      <h3><img src="https://flagcdn.com/w40/de.png" alt="Германия"> Германия — Релокация</h3>
+      <p><strong>Клиент:</strong> Оксана</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal118')">Learn more</button></div>
+    
+    <div class="case" data-country="Чехия">
+      <h3><img src="https://flagcdn.com/w40/cz.png" alt="Чехия"> Чехия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Роман</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal119')">Learn more</button></div>
+    
+    <div class="case" data-country="Нидерланды">
+      <h3><img src="https://flagcdn.com/w40/nl.png" alt="Нидерланды"> Нидерланды — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Татьяна</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal120')">Learn more</button></div>
+    
+    <div class="case" data-country="Литва">
+      <h3><img src="https://flagcdn.com/w40/lt.png" alt="Литва"> Литва — Внж</h3>
+      <p><strong>Клиент:</strong> Андрей</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal121')">Learn more</button></div>
+    
+    <div class="case" data-country="Словакия">
+      <h3><img src="https://flagcdn.com/w40/sk.png" alt="Словакия"> Словакия — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Мария</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal122')">Learn more</button></div>
+    
+    <div class="case" data-country="Польша">
+      <h3><img src="https://flagcdn.com/w40/pl.png" alt="Польша"> Польша — Релокация</h3>
+      <p><strong>Клиент:</strong> Иван</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal123')">Learn more</button></div>
+    
+    <div class="case" data-country="Португалия">
+      <h3><img src="https://flagcdn.com/w40/pt.png" alt="Португалия"> Португалия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Наталья</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal124')">Learn more</button></div>
+    
+    <div class="case" data-country="Испания">
+      <h3><img src="https://flagcdn.com/w40/es.png" alt="Испания"> Испания — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Олег</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal125')">Learn more</button></div>
+    
+    <div class="case" data-country="Италия">
+      <h3><img src="https://flagcdn.com/w40/it.png" alt="Италия"> Италия — Внж</h3>
+      <p><strong>Клиент:</strong> Елена</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal126')">Learn more</button></div>
+    
+    <div class="case" data-country="Франция">
+      <h3><img src="https://flagcdn.com/w40/fr.png" alt="Франция"> Франция — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Дмитрий</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal127')">Learn more</button></div>
+    
+    <div class="case" data-country="Германия">
+      <h3><img src="https://flagcdn.com/w40/de.png" alt="Германия"> Германия — Релокация</h3>
+      <p><strong>Клиент:</strong> Оксана</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal128')">Learn more</button></div>
+    
+    <div class="case" data-country="Чехия">
+      <h3><img src="https://flagcdn.com/w40/cz.png" alt="Чехия"> Чехия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Роман</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal129')">Learn more</button></div>
+    
+    <div class="case" data-country="Нидерланды">
+      <h3><img src="https://flagcdn.com/w40/nl.png" alt="Нидерланды"> Нидерланды — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Татьяна</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal130')">Learn more</button></div>
+    
+    <div class="case" data-country="Литва">
+      <h3><img src="https://flagcdn.com/w40/lt.png" alt="Литва"> Литва — Внж</h3>
+      <p><strong>Клиент:</strong> Андрей</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal131')">Learn more</button></div>
+    
+    <div class="case" data-country="Словакия">
+      <h3><img src="https://flagcdn.com/w40/sk.png" alt="Словакия"> Словакия — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Мария</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal132')">Learn more</button></div>
+    
+    <div class="case" data-country="Польша">
+      <h3><img src="https://flagcdn.com/w40/pl.png" alt="Польша"> Польша — Релокация</h3>
+      <p><strong>Клиент:</strong> Иван</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal133')">Learn more</button></div>
+    
+    <div class="case" data-country="Португалия">
+      <h3><img src="https://flagcdn.com/w40/pt.png" alt="Португалия"> Португалия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Наталья</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal134')">Learn more</button></div>
+    
+    <div class="case" data-country="Испания">
+      <h3><img src="https://flagcdn.com/w40/es.png" alt="Испания"> Испания — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Олег</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal135')">Learn more</button></div>
+    
+    <div class="case" data-country="Италия">
+      <h3><img src="https://flagcdn.com/w40/it.png" alt="Италия"> Италия — Внж</h3>
+      <p><strong>Клиент:</strong> Елена</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal136')">Learn more</button></div>
+    
+    <div class="case" data-country="Франция">
+      <h3><img src="https://flagcdn.com/w40/fr.png" alt="Франция"> Франция — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Дмитрий</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal137')">Learn more</button></div>
+    
+    <div class="case" data-country="Германия">
+      <h3><img src="https://flagcdn.com/w40/de.png" alt="Германия"> Германия — Релокация</h3>
+      <p><strong>Клиент:</strong> Оксана</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal138')">Learn more</button></div>
+    
+    <div class="case" data-country="Чехия">
+      <h3><img src="https://flagcdn.com/w40/cz.png" alt="Чехия"> Чехия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Роман</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal139')">Learn more</button></div>
+    
+    <div class="case" data-country="Нидерланды">
+      <h3><img src="https://flagcdn.com/w40/nl.png" alt="Нидерланды"> Нидерланды — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Татьяна</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal140')">Learn more</button></div>
+    
+    <div class="case" data-country="Литва">
+      <h3><img src="https://flagcdn.com/w40/lt.png" alt="Литва"> Литва — Внж</h3>
+      <p><strong>Клиент:</strong> Андрей</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal141')">Learn more</button></div>
+    
+    <div class="case" data-country="Словакия">
+      <h3><img src="https://flagcdn.com/w40/sk.png" alt="Словакия"> Словакия — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Мария</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal142')">Learn more</button></div>
+    
+    <div class="case" data-country="Польша">
+      <h3><img src="https://flagcdn.com/w40/pl.png" alt="Польша"> Польша — Релокация</h3>
+      <p><strong>Клиент:</strong> Иван</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal143')">Learn more</button></div>
+    
+    <div class="case" data-country="Португалия">
+      <h3><img src="https://flagcdn.com/w40/pt.png" alt="Португалия"> Португалия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Наталья</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal144')">Learn more</button></div>
+    
+    <div class="case" data-country="Испания">
+      <h3><img src="https://flagcdn.com/w40/es.png" alt="Испания"> Испания — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Олег</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal145')">Learn more</button></div>
+    
+    <div class="case" data-country="Италия">
+      <h3><img src="https://flagcdn.com/w40/it.png" alt="Италия"> Италия — Внж</h3>
+      <p><strong>Клиент:</strong> Елена</p>
+      <p><strong>Результат:</strong> оформлено за 10 дней</p>
+    <br><button onclick="showModal('modal146')">Learn more</button></div>
+    
+    <div class="case" data-country="Франция">
+      <h3><img src="https://flagcdn.com/w40/fr.png" alt="Франция"> Франция — Рабочая Виза</h3>
+      <p><strong>Клиент:</strong> Дмитрий</p>
+      <p><strong>Результат:</strong> без отказов</p>
+    <br><button onclick="showModal('modal147')">Learn more</button></div>
+    
+    <div class="case" data-country="Германия">
+      <h3><img src="https://flagcdn.com/w40/de.png" alt="Германия"> Германия — Релокация</h3>
+      <p><strong>Клиент:</strong> Оксана</p>
+      <p><strong>Результат:</strong> полное сопровождение</p>
+    <br><button onclick="showModal('modal148')">Learn more</button></div>
+    
+    <div class="case" data-country="Чехия">
+      <h3><img src="https://flagcdn.com/w40/cz.png" alt="Чехия"> Чехия — Студенческая Виза</h3>
+      <p><strong>Клиент:</strong> Роман</p>
+      <p><strong>Результат:</strong> контракт с работодателем</p>
+    <br><button onclick="showModal('modal149')">Learn more</button></div>
+    
+    <div class="case" data-country="Нидерланды">
+      <h3><img src="https://flagcdn.com/w40/nl.png" alt="Нидерланды"> Нидерланды — Семейная Виза</h3>
+      <p><strong>Клиент:</strong> Татьяна</p>
+      <p><strong>Результат:</strong> мультивиза на 3 года</p>
+    <br><button onclick="showModal('modal150')">Learn more</button></div>
+    
+  
+<div class="case" data-country="Венгрия">
+  <h3><img src="https://flagcdn.com/w40/hu.png" alt="Венгрия"> Венгрия — White Card (цифровой кочевник)</h3>
+  <p><strong>Клиент:</strong> София, дизайнер UX/UI</p>
+  <p><strong>Результат:</strong> Оформление карты digital nomad на 12 месяцев</p>
+<br><button onclick="showModal('modal151')">Learn more</button></div>
+
+  
+<div class="case" data-country="США">
+  <h3><img src="https://flagcdn.com/w40/us.png" alt="US"> США — Виза B1/B2</h3>
+  <p><strong>Клиент:</strong> Алексей, предприниматель</p>
+  <p><strong>Результат:</strong> Получена туристическая виза на 10 лет</p>
+<br><button onclick="showModal('modal152')">Learn more</button></div>
+<div class="case" data-country="Великобритания">
+  <h3><img src="https://flagcdn.com/w40/gb.png" alt="UK"> Великобритания — Виза Tier 5</h3>
+  <p><strong>Клиент:</strong> Ирина, маркетолог</p>
+  <p><strong>Результат:</strong> Получена рабочая виза на 1 год с возможностью продления</p>
+<br><button onclick="showModal('modal153')">Learn more</button></div>
+
+</div>
+</section>
+
+<script>
+function filterCases() {
+  const filter = document.getElementById("countryFilter").value;
+  const cases = document.querySelectorAll(".case");
+  cases.forEach(c => {
+    const country = c.getAttribute("data-country");
+    if (filter === "Все" || country === filter) {
+      c.style.display = "block";
+    } else {
+      c.style.display = "none";
+    }
+  });
+}
+</script>
+
+
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal1')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal2')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal3')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal4" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal4')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal5" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal5')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal6" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal6')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal7" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal7')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal8" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal8')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal9" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal9')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal10" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal10')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal11" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal11')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal12" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal12')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal13" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal13')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal14" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal14')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal15" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal15')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal16" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal16')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal17" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal17')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal18" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal18')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal19" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal19')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal20" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal20')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal21" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal21')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal22" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal22')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal23" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal23')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal24" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal24')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal25" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal25')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal26" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal26')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal27" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal27')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal28" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal28')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal29" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal29')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal30" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal30')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal31" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal31')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal32" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal32')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal33" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal33')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal34" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal34')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal35" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal35')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal36" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal36')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal37" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal37')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal38" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal38')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal39" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal39')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal40" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal40')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal41" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal41')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal42" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal42')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal43" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal43')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal44" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal44')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal45" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal45')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal46" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal46')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal47" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal47')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal48" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal48')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal49" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal49')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal50" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal50')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal51" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal51')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal52" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal52')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal53" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal53')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal54" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal54')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal55" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal55')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal56" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal56')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal57" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal57')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal58" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal58')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal59" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal59')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal60" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal60')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal61" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal61')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal62" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal62')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal63" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal63')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal64" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal64')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal65" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal65')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal66" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal66')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal67" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal67')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal68" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal68')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal69" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal69')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal70" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal70')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal71" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal71')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal72" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal72')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal73" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal73')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal74" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal74')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal75" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal75')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal76" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal76')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal77" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal77')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal78" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal78')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal79" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal79')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal80" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal80')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal81" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal81')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal82" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal82')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal83" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal83')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal84" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal84')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal85" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal85')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal86" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal86')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal87" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal87')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal88" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal88')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal89" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal89')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal90" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal90')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal91" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal91')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal92" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal92')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal93" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal93')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal94" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal94')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal95" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal95')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal96" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal96')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal97" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal97')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal98" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal98')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal99" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal99')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal100" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal100')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal101" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal101')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal102" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal102')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal103" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal103')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal104" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal104')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal105" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal105')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal106" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal106')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal107" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal107')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal108" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal108')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal109" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal109')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal110" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal110')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal111" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal111')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal112" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal112')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal113" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal113')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal114" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal114')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal115" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal115')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal116" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal116')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal117" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal117')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal118" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal118')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal119" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal119')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal120" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal120')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal121" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal121')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal122" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal122')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal123" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal123')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal124" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal124')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal125" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal125')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal126" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal126')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal127" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal127')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal128" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal128')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal129" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal129')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal130" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal130')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal131" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal131')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal132" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal132')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal133" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal133')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal134" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal134')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal135" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal135')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal136" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal136')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal137" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal137')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal138" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal138')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal139" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal139')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal140" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal140')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal141" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal141')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal142" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal142')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal143" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal143')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal144" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal144')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal145" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal145')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal146" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal146')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal147" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal147')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal148" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal148')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal149" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal149')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal150" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal150')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal151" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal151')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal152" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal152')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+
+<div id="modal153" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal153')">&times;</span>
+    <h3>Дополнительная информация</h3>
+    <p>Мы сопровождаем вас на всех этапах — от подготовки документов до подачи в консульство. Работаем только с проверенными работодателями и официальными приглашениями. Подробности и индивидуальный расчёт — по запросу.</p>
+  
+<br><br>
+<a href="https://wa.me/447876602305?text=Здравствуйте!%20Интересует%20оформление%20визы." target="_blank" style="display:inline-block;padding:12px 20px;background:#25D366;color:#fff;border-radius:6px;text-decoration:none;font-weight:bold;">
+  Написать в WhatsApp
+</a>
+
+  </div>
+</div>
+
+<script>
+function showModal(id) {
+  document.getElementById(id).style.display = "block";
+}
+function closeModal(id) {
+  document.getElementById(id).style.display = "none";
+}
+</script>
+
+</body>
+</html>

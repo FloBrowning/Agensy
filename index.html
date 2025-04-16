@@ -4,15 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FLO Browning Agency</title>
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" type="image/png">
 
   <!-- AOS стили -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
     body {
       margin: 0;
       font-family: 'Arial', sans-serif;
@@ -49,23 +45,12 @@
       font-size: 18px;
       margin-top: 10px;
     }
-    .lang-toggle {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background: #ffffff88;
-      color: #002b5c;
-      padding: 6px 12px;
-      border-radius: 8px;
-      font-size: 14px;
-      cursor: pointer;
-    }
     section {
       padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
     }
-    .services, .about, .contact, .benefits {
+    .services, .about, .contact, .benefits, .how-we-work, .testimonials, .countries, .packages, .faq {
       background: white;
       margin-bottom: 20px;
       border-radius: 8px;
@@ -75,7 +60,7 @@
     h2 {
       color: #002b5c;
     }
-    ul {
+    ul, ol {
       padding-left: 20px;
     }
     footer {
@@ -121,9 +106,51 @@
     .whatsapp-button img {
       height: 28px;
     }
-    footer a img {
+    .whatsapp-fixed {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      padding: 10px;
+      border-radius: 50%;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .whatsapp-fixed img {
+      height: 32px;
+    }
+    .flags div {
+      display: inline-block;
+      margin-right: 15px;
+      font-size: 16px;
+    }
+    .flags img {
       height: 24px;
+      margin-right: 5px;
       vertical-align: middle;
+    }
+    .package-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .package {
+      flex: 1;
+      min-width: 250px;
+      background-color: #f8f8f8;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .testimonial {
+      margin-bottom: 20px;
+      padding-left: 10px;
+      border-left: 4px solid #002b5c;
+    }
+    details summary {
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
     }
   </style>
 </head>
@@ -131,7 +158,6 @@
 <body>
 
 <header>
-  <div class="lang-toggle">EN / RU</div>
   <div class="content" data-aos="fade-down">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Globe_icon.svg/1024px-Globe_icon.svg.png" class="logo" alt="FLO Browning Agency">
     <h1>FLO Browning Agency</h1>
@@ -141,40 +167,91 @@
 
 <section class="about" data-aos="fade-up">
   <h2>О нас</h2>
-  <p>
-    FLO Browning Agency — ваш надежный партнёр в мире международных услуг, который делает путь к мечте ярким и беззаботным!
-    Мы предоставляем комплексные решения по визам, трудоустройству, ВНЖ, недвижимости, юридическим вопросам, а также туристическим услугам.
-    С нами вы получите поддержку на каждом этапе, будь то путешествие, переезд или новая работа за границей.
-  </p>
+  <p>FLO Browning Agency — ваш надежный партнёр в мире международных услуг. Мы предоставляем визовую поддержку, оформление ВНЖ, помощь в трудоустройстве и многое другое. Работаем официально и с душой!</p>
 </section>
 
 <section class="services" data-aos="zoom-in">
   <h2>Наши услуги</h2>
   <ul>
-    <li>Оформление Шенгенских виз</li>
+    <li>Шенгенские визы</li>
     <li>Визы в Великобританию и США</li>
-    <li>Оформление ВНЖ и ПМЖ</li>
-    <li>Поиск и трудоустройство в странах ЕС</li>
-    <li>Юридическая поддержка и консультации</li>
-    <li>Подбор туров и бронирование авиабилетов</li>
-    <li>Покупка и аренда недвижимости за границей</li>
+    <li>Оформление ВНЖ</li>
+    <li>Поиск работы в ЕС</li>
+    <li>Покупка недвижимости за рубежом</li>
   </ul>
 </section>
 
-<section class="benefits" data-aos="fade-up">
-  <h2>Почему выбирают нас</h2>
-  <ul>
-    <li>10+ лет международного опыта</li>
-    <li>Индивидуальный подход к каждому клиенту</li>
-    <li>Легальная деятельность и надежность</li>
-    <li>Комплексное сопровождение “под ключ”</li>
-  </ul>
+<section class="how-we-work" data-aos="fade-up">
+  <h2>Как мы работаем</h2>
+  <ol>
+    <li><strong>Консультация:</strong> Бесплатная оценка вашей ситуации.</li>
+    <li><strong>Сбор документов:</strong> Помощь на каждом этапе.</li>
+    <li><strong>Подача:</strong> Мы готовим и подаём всё за вас.</li>
+    <li><strong>Результат:</strong> Вы получаете визу, ВНЖ или работу!</li>
+  </ol>
 </section>
 
-<section class="contact" id="contacts" data-aos="fade-up">
+<section class="countries" data-aos="fade-up">
+  <h2>Страны, с которыми мы работаем</h2>
+  <div class="flags">
+    <div><img src="https://flagcdn.com/w40/eu.png"> Европа</div>
+    <div><img src="https://flagcdn.com/w40/gb.png"> Великобритания</div>
+    <div><img src="https://flagcdn.com/w40/us.png"> США</div>
+    <div><img src="https://flagcdn.com/w40/de.png"> Германия</div>
+    <div><img src="https://flagcdn.com/w40/pt.png"> Португалия</div>
+  </div>
+</section>
+
+<section class="packages" data-aos="fade-up">
+  <h2>Пакеты услуг</h2>
+  <div class="package-list">
+    <div class="package">
+      <h3>Старт</h3>
+      <p>Базовая помощь и консультации</p>
+      <p><strong>от 100€</strong></p>
+    </div>
+    <div class="package">
+      <h3>Премиум</h3>
+      <p>Полное сопровождение + переводы</p>
+      <p><strong>от 250€</strong></p>
+    </div>
+    <div class="package">
+      <h3>VIP</h3>
+      <p>Личный менеджер и приоритетное обслуживание</p>
+      <p><strong>от 500€</strong></p>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials" data-aos="zoom-in">
+  <h2>Отзывы наших клиентов</h2>
+  <div class="testimonial">
+    <p>“Спасибо FLO! Помогли получить визу и подобрать круиз!”</p>
+    <strong>— Елена, Братислава</strong>
+  </div>
+  <div class="testimonial">
+    <p>“Благодарю за полное сопровождение по ВНЖ в Испании!”</p>
+    <strong>— Артур, Тбилиси</strong>
+  </div>
+</section>
+
+<section class="faq" data-aos="fade-up">
+  <h2>Вопросы и ответы</h2>
+  <details>
+    <summary>Сколько оформляется виза?</summary>
+    <p>Обычно 5–15 дней. Зависит от страны и консульства.</p>
+  </details>
+  <details>
+    <summary>Вы подаёте документы за клиента?</summary>
+    <p>Да, мы делаем всё возможное, чтобы клиенту было удобно.</p>
+  </details>
+</section>
+
+<section class="contact" data-aos="fade-up">
   <h2>Контакты</h2>
   <p>Email: <a href="mailto:flobrowningagency@gmail.com">flobrowningagency@gmail.com</a></p>
   <p>WhatsApp: <a href="https://wa.me/447876602305" target="_blank">+44 7876 602305</a></p>
+
   <a href="https://wa.me/447876602305" target="_blank" class="whatsapp-button">
     <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
     Связаться в WhatsApp
@@ -193,19 +270,17 @@
     <a href="https://www.instagram.com/flo_browning_agency" target="_blank" style="margin-right: 15px;">
       <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
     </a>
-    <a href="https://wa.me/447876602305" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-    </a>
   </div>
 </footer>
+
+<a href="https://wa.me/447876602305" class="whatsapp-fixed" target="_blank" title="Связаться в WhatsApp">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+</a>
 
 <!-- AOS JS -->
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
-  AOS.init({
-    duration: 1000,
-    once: true
-  });
+  AOS.init({ duration: 1000, once: true });
 </script>
 
 </body>

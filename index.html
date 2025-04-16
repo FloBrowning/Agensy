@@ -178,5 +178,55 @@
 AOS.init({ duration: 1000, once: true });
 </script>
 
+
+<section class="contact-form" style="padding:40px; background:#f4f4f4;">
+  <h2>Оставить заявку</h2>
+  <form onsubmit="sendWhatsApp(); return false;">
+    <label>Ваше имя:</label><br>
+    <input type="text" id="name" required><br><br>
+    <label>Услуга или вопрос:</label><br>
+    <textarea id="message" rows="5" required></textarea><br><br>
+    <button type="submit" style="background:#25D366;color:#fff;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;">
+      Отправить в WhatsApp
+    </button>
+  </form>
+</section>
+
+<script>
+  function sendWhatsApp() {
+    var name = document.getElementById("name").value;
+    var message = document.getElementById("message").value;
+    var text = "Здравствуйте! Меня зовут " + name + ". " + message;
+    var url = "https://wa.me/447876602305?text=" + encodeURIComponent(text);
+    window.open(url, '_blank');
+  }
+</script>
+
+
+<!-- Кнопка внизу экрана -->
+<button onclick="document.getElementById('modalForm').style.display='block'" style="position:fixed;bottom:20px;right:20px;padding:12px 20px;background:#25D366;color:#fff;border:none;border-radius:8px;box-shadow:0 4px 10px rgba(0,0,0,0.2);z-index:999;">
+  Оставить заявку
+</button>
+
+<!-- Модальное окно -->
+<div id="modalForm" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:9999;">
+  <div style="background:white;padding:30px;border-radius:8px;max-width:500px;margin:10% auto;position:relative;">
+    <span onclick="document.getElementById('modalForm').style.display='none'" style="position:absolute;top:10px;right:15px;font-size:24px;cursor:pointer;">×</span>
+    <h3>Оставить заявку</h3>
+    <input type="text" id="popupName" placeholder="Ваше имя" style="width:100%;margin-bottom:10px;padding:10px;">
+    <textarea id="popupMessage" placeholder="Ваш вопрос..." style="width:100%;height:100px;padding:10px;"></textarea><br>
+    <button onclick="submitPopup()" style="margin-top:10px;background:#25D366;color:white;padding:10px 20px;border:none;border-radius:5px;">Отправить в WhatsApp</button>
+  </div>
+</div>
+
+<script>
+function submitPopup() {
+  const name = document.getElementById("popupName").value;
+  const msg = document.getElementById("popupMessage").value;
+  const full = "Здравствуйте! Меня зовут " + name + ". " + msg;
+  window.open("https://wa.me/447876602305?text=" + encodeURIComponent(full), "_blank");
+}
+</script>
+
 </body>
 </html>

@@ -1,35 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://images.unsplash.com/photo-1533674689015-1b8bfbeca9ec?fit=crop&w=1950&q=80') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #004080;
-    color: white;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
 }
 
-.logo {
-    font-size: 1.5em;
-    font-weight: 600;
+header .logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #f4c542;
+}
+
+nav {
+    margin-top: 10px;
 }
 
 nav a {
-    color: white;
+    color: #fff;
+    margin: 0 15px;
     text-decoration: none;
-    margin-left: 20px;
     font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f4c542;
 }
 
 main {
-    padding: 30px;
+    padding: 60px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 section {
@@ -37,43 +50,63 @@ section {
 }
 
 h1, h2 {
-    color: #004080;
+    color: #f4c542;
+    margin-bottom: 20px;
 }
 
 ul {
-    list-style-type: disc;
+    list-style: disc;
     padding-left: 20px;
 }
 
 footer {
-    background-color: #004080;
-    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
-    padding: 15px;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
 }
 
-.whatsapp-button {
-    background-color: #25D366;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+    filter: brightness(1.1);
 }
 
 .big-whatsapp-btn {
     display: inline-flex;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #25D366;
+    background-color: #25d366;
     color: white;
-    border-radius: 8px;
-    margin-top: 20px;
-    font-weight: bold;
     text-decoration: none;
-    font-size: 1.1em;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 .big-whatsapp-btn img {
     width: 24px;
     height: 24px;
     margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    header .logo {
+        font-size: 24px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
 }
